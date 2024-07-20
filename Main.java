@@ -10,7 +10,7 @@ public class Main {
         double[] arrayPagoInss = new double[5];
         double[] arrayPagoIR = new double[5];
         double[] arraySalarioLiquido = new double[5];
-        
+
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < arraySalarioBruto.length; i++) {
@@ -18,6 +18,8 @@ public class Main {
             double salarioDigitado = sc.nextDouble();
             arraySalarioBruto[i] = salarioDigitado;
         }
+
+        sc.close();
 
         for (int i = 0; i < arraySalarioBruto.length; i++) {
             double salario = arraySalarioBruto[i];
